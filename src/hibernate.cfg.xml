@@ -9,7 +9,6 @@
     <property name="hibernate.connection.password">postgres</property>
     <property name="hibernate.hbm2ddl.auto">update</property>
     <property name="hibernate.show_sql">true</property>
-    <mapping class="buscaminas.UsuariRegistrat"/>
     <mapping class="buscaminas.Partida"/>
     <mapping class="buscaminas.Nivell"/>
   </session-factory>
