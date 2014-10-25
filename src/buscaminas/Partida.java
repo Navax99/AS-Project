@@ -26,10 +26,8 @@ public class Partida {
     private boolean estaGuanyada;
     private int nombreTirades;
     
-    @OneToMany private Collection<Casella> caselles;
     @OneToMany private Nivell nivell;
-    @ManyToOne private Jugador jugadorPartidaActual;
-    @OneToOne private Jugador jugadorPartidaJugada;
+    
 
     public Partida(int idPartida) {
         this.idPartida=idPartida;

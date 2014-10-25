@@ -24,7 +24,7 @@ public class Buscaminas {
         SessionFactory factory = MyHibernateUtil.getSessionFactory();
         Session session = factory.openSession();
         session.beginTransaction();
-        UsuariRegistrat t = new UsuariRegistrat("Paco");
+        Partida t = new Partida(10);
         session.save(t);
         session.getTransaction().commit();
         
