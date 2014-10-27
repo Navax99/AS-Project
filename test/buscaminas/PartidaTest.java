@@ -48,7 +48,7 @@ public class PartidaTest {
         int result = instance.getIdPartida();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -60,6 +60,7 @@ public class PartidaTest {
         int idPartida = 0;
         Partida instance = new Partida(0);
         instance.setIdPartida(idPartida);
+        assertEquals(idPartida, instance.getIdPartida());
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
@@ -87,6 +88,7 @@ public class PartidaTest {
         boolean estaAcabada = false;
         Partida instance = new Partida(0);
         instance.setEstaAcabada(estaAcabada);
+        assertEquals(estaAcabada, instance.isEstaAcabada());
         // TODO review the generated test code and remove the default call to fail.
        // fail("The test case is a prototype.");
     }
@@ -114,6 +116,7 @@ public class PartidaTest {
         boolean estaGuanyada = false;
         Partida instance = new Partida(0);
         instance.setEstaGuanyada(estaGuanyada);
+         assertEquals(estaGuanyada, instance.isEstaGuanyada());
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
@@ -141,6 +144,7 @@ public class PartidaTest {
         int nombreTirades = 0;
         Partida instance = new Partida(0);
         instance.setNombreTirades(nombreTirades);
+        assertEquals(nombreTirades, instance.getNombreTirades());
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
