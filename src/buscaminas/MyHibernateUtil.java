@@ -39,6 +39,7 @@ public class MyHibernateUtil {
         SessionFactory factory = MyHibernateUtil.getSessionFactory();
         Session session = factory.openSession();
         session.beginTransaction();
+        
         // UsuariRegistrat t = new UsuariRegistrat("Paco");
         session.save(t);
         session.getTransaction().commit();

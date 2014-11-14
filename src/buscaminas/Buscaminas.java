@@ -19,15 +19,38 @@ public class Buscaminas {
     /**
      * @param args the command line arguments
      */
+    
+    private static Buscaminas instance=null;
+    private int idPartida;
+
+    private Buscaminas() {
+    }
+    
+    public Buscaminas getInstance(){
+        if(instance==null){
+            instance = new Buscaminas();
+        }
+        return instance;
+    }
+    
+    
     public static void main(String[] args) {
         // TODO code application logic here
-        SessionFactory factory = MyHibernateUtil.getSessionFactory();
-        Session session = factory.openSession();
-        session.beginTransaction();
-        Partida t = new Partida(10);
-        session.save(t);
-        session.getTransaction().commit();
-        
+      
+    }
+
+    /**
+     * @return the idPartida
+     */
+    public int getIdPartida() {
+        return idPartida;
+    }
+
+    /**
+     * @param idPartida the idPartida to set
+     */
+    public void setIdPartida(int idPartida) {
+        this.idPartida = idPartida;
     }
     
 }
