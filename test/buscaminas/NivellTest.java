@@ -60,6 +60,7 @@ public class NivellTest {
         String nom = "";
         Nivell instance = new Nivell("",0,0,0);
         instance.setNom(nom);
+        assertEquals(nom, instance.getNom());
         // TODO review the generated test code and remove the default call to fail.
         // fail("The test case is a prototype.");
     }
@@ -87,6 +88,7 @@ public class NivellTest {
         int nombreCasellesxFila = 0;
         Nivell instance = new Nivell("",0,0,0);
         instance.setNombreCasellesxFila(nombreCasellesxFila);
+        assertEquals(nombreCasellesxFila, instance.getNombreCasellesxFila());
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
@@ -114,6 +116,7 @@ public class NivellTest {
         int nombreCasellesxColumna = 0;
         Nivell instance = new Nivell("",0,0,0);
         instance.setNombreCasellesxColumna(nombreCasellesxColumna);
+        assertEquals(nombreCasellesxColumna, instance.getNombreCasellesxColumna());
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
@@ -141,6 +144,7 @@ public class NivellTest {
         int nombreMines = 0;
         Nivell instance = new Nivell("",0,0,0);
         instance.setNombreMines(nombreMines);
+        assertEquals(nombreMines, instance.getNombreMines());
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
